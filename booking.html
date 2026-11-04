@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book an Appointment — My Nail Paradise, Hougang Singapore</title>
+<meta name="description" content="Book your manicure, pedicure, nail art, lash or spa appointment at My Nail Paradise, Blk 682 Hougang Ave 4. Request online — we confirm by call or WhatsApp.">
+<meta property="og:title" content="Book — My Nail Paradise">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<noscript><style>.rv{opacity:1!important;transform:none!important}.marquee-track{animation:none!important}</style></noscript>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='38' fill='%23D7F74B' stroke='%23101210' stroke-width='8'/></svg>">
+</head>
+<body>
+<div class="demo-ribbon">Design concept proposal — prepared for <b>My Nail Paradise</b> by Tiyan Digital</div>
+
+<header class="site-head">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="My Nail Paradise home"><span class="dot" aria-hidden="true"></span>My Nail Paradise</a>
+    <button class="menu-toggle" aria-expanded="false" aria-label="Open menu"><span></span></button>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="btn small-btn" href="booking.html" aria-current="page">Book now</a>
+  </div>
+</header>
+
+<main>
+  <section class="block">
+    <div class="wrap" style="max-width:780px">
+      <p class="eyebrow rv">Booking</p>
+      <h1 class="rv d1">Reserve<br>your chair.</h1>
+      <p class="lede rv d2">Three quick steps. We confirm every request by call or WhatsApp — usually within the hour during opening times.</p>
+
+      <div id="bookFlow" style="margin-top:36px">
+        <div class="book-steps rv" id="bookSteps" aria-hidden="true"><div class="b on"></div><div class="b"></div><div class="b"></div></div>
+
+        <!-- STEP 1 -->
+        <div class="bstep active" data-step="0">
+          <h2 style="font-size:26px">1 · What are we doing today?</h2>
+          <div class="opt-grid" role="group" aria-label="Choose a service">
+            <button type="button" class="opt" data-service="Express Manicure" aria-pressed="false">Express Manicure<small>~30 min · quick refresh</small></button>
+            <button type="button" class="opt" data-service="Classic Manicure" aria-pressed="false">Classic Manicure<small>Full clean-up</small></button>
+            <button type="button" class="opt" data-service="Gel Manicure" aria-pressed="false">Gel Manicure<small>2–3 weeks wear</small></button>
+            <button type="button" class="opt" data-service="Express Pedicure" aria-pressed="false">Express Pedicure<small>~30 min</small></button>
+            <button type="button" class="opt" data-service="Spa Pedicure" aria-pressed="false">Spa Pedicure<small>Full pamper</small></button>
+            <button type="button" class="opt" data-service="Nail Art / 3D" aria-pressed="false">Nail Art / 3D<small>Bring a reference</small></button>
+            <button type="button" class="opt" data-service="Lash Extensions" aria-pressed="false">Lash Extensions<small>$59.90 advertised</small></button>
+            <button type="button" class="opt" data-service="Waxing / Facial" aria-pressed="false">Waxing / Facial<small>Ask in-salon</small></button>
+            <button type="button" class="opt" data-service="Mani + Pedi Combo" aria-pressed="false">Mani + Pedi Combo<small>Hands &amp; feet</small></button>
+          </div>
+          <div class="form-nav"><button type="button" class="btn" data-next>Continue →</button></div>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="bstep" data-step="1">
+          <h2 style="font-size:26px">2 · When suits you?</h2>
+          <div class="grid-2" style="margin-top:18px">
+            <div class="field">
+              <label for="fDate">Preferred date</label>
+              <input type="date" id="fDate" name="date" autocomplete="off">
+              <p class="err" id="errDate">Please choose a date.</p>
+            </div>
+            <div class="field">
+              <label for="fTime">Preferred time</label>
+              <select id="fTime" name="time">
+                <option value="">Select…</option>
+                <option>Morning (11am – 2pm)</option>
+                <option>Afternoon (2pm – 5pm)</option>
+                <option>Evening (5pm – 8:30pm)</option>
+              </select>
+              <p class="err">Please choose a time slot.</p>
+            </div>
+          </div>
+          <p class="small muted">Hours: weekdays 11am – 8:30pm · weekends &amp; PH 10am – 6:30pm.</p>
+          <div class="form-nav">
+            <button type="button" class="btn ghost" data-back>← Back</button>
+            <button type="button" class="btn" data-next>Continue →</button>
+          </div>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="bstep" data-step="2">
+          <h2 style="font-size:26px">3 · Your details</h2>
+          <div id="bookSummary" class="sample-note" style="margin:18px 0 26px" aria-live="polite"></div>
+          <form id="bookForm" novalidate>
+            <div class="grid-2">
+              <div class="field">
+                <label for="fName">Full name</label>
+                <input type="text" id="fName" name="name" autocomplete="name" placeholder="e.g. Jia Le">
+                <p class="err">Please enter your name.</p>
+              </div>
+              <div class="field">
+                <label for="fPhone">Phone / WhatsApp</label>
+                <input type="tel" id="fPhone" name="phone" autocomplete="tel" placeholder="e.g. 9123 4567" inputmode="tel">
+                <p class="err">Please enter a valid phone number.</p>
+              </div>
+            </div>
+            <div class="field">
+              <label for="fNotes">Notes <span class="muted" style="font-weight:400">(optional)</span></label>
+              <textarea id="fNotes" name="notes" rows="3" placeholder="Reference photo, allergies, special requests…"></textarea>
+            </div>
+            <label class="consent">
+              <input type="checkbox" id="fConsent" name="consent">
+              <span>I agree that My Nail Paradise may contact me by call or WhatsApp about this booking request. My details are used only for the booking.</span>
+            </label>
+            <div class="form-nav">
+              <button type="button" class="btn ghost" data-back>← Back</button>
+              <button type="submit" class="btn">Request booking</button>
+            </div>
+          </form>
+          <p class="small muted" style="margin-top:18px">Demo notice: this concept form shows a confirmation on-screen; the live site will send your request to the salon.</p>
+        </div>
+      </div>
+
+      <div id="bookDone" class="success-box" style="display:none;margin-top:36px">
+        <div class="big-tick" aria-hidden="true">✓</div>
+        <h2>Request received, <span id="doneName">friend</span>.</h2>
+        <p class="lede" style="margin-inline:auto"><span id="doneDetail"></span></p>
+        <p class="muted">We'll confirm by call or WhatsApp shortly. Need it sooner? Call <a href="tel:+6563864385"><strong>6386 4385</strong></a> or WhatsApp <a href="https://wa.me/6592701004" target="_blank" rel="noopener"><strong>9270 1004</strong></a>.</p>
+      </div>
+
+      <div class="rv" style="margin-top:40px;text-align:center">
+        <p class="muted">Prefer to book directly?</p>
+        <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:12px">
+          <a class="btn ghost" href="tel:+6563864385">Call 6386 4385</a>
+          <a class="btn ghost" href="https://wa.me/6592701004" target="_blank" rel="noopener">WhatsApp us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html" style="margin-bottom:14px"><span class="dot" aria-hidden="true"></span>My Nail Paradise</a>
+        <p class="small muted" style="max-width:26em">One-stop beauty salon in Hougang — manicure, pedicure, nail art, lash, waxing, facial &amp; spa.</p>
+      </div>
+      <div><h4>Visit</h4><ul><li>Blk 682 Hougang Ave 4<br>#01-322, S(530682)</li><li><a href="contact.html">Hours &amp; directions</a></li></ul></div>
+      <div><h4>Explore</h4><ul><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="booking.html">Book now</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li></ul></div>
+    </div>
+    <div class="foot-base">
+      <span>© <span data-year>2026</span> My Nail Paradise. All rights reserved.</span>
+      <span>Design concept proposal by Tiyan Digital</span>
+    </div>
+  </div>
+</footer>
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
